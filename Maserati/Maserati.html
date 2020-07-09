@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title> Maserati</title>
+<link rel="stylesheet" type="text/css" href="Maserati.css">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<ul>
+<li><img src="rsz_logo.png"</li>
+<li><a href="#home">Home</a></li>
+<li><a href="Models.html">Models</a></li>
+<li><a href="team.html">Team</a></li>
+</ul>
+</nav>
+<section class="mod1">
+<div class="title">
+<h1> Dream Car is always</h1>
+<p> Hotter than your dream girl </p>
+</div>
+</section>
+<p>
+
+</p>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="slideshow1.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="slideshow2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<section class="mod2">
+<div class="title">
+<h1><center><strong><i>#13th Place</i></strong></center></h1>
+</div>
+<div class="container">
+<div class="box">
+<div class="content">
+<h2>It's starts in 1900</h2>
+<p>The Maserati story begins with railroad worker Rodolfo Maserati, his wife Carolina Losi and seven Maserati children who all inherit their father’s passion for speed and precision engineering.</p>
+</div>
+</div>
+<div class="box">
+<div class="content">
+<h2>1940s  A new era</h2>
+<p>1940, May 30: at the wheel of the same car, Wilbur Shaw wins the Indianapolis 500 for the second consecutive time, at an average speed of 183.911 km/h (114.227 mph).
+1947: the A6 1500 is presented at the Geneva Motor Show. Designed by Pininfarina, the car is named after Alfieri and the number of cylinders. It’s the first Maserati destined for daily use rather than racing, and is a huge success.
+</p>
+</div>
+</div>
+<div class="box">
+<div class="content">
+<h2>1980s  A presidential brand
+</h2>
+<p>A new car is introduced in the 1980s: the Maserati Biturbo. Beautiful and extremely powerful, the 6-cylinder 1,996 cc with two compressors can reach speeds of 215 km/h.
+The President of the Republic of Italy, Sandro Pertini, selects the Quattroporte III as his Presidential limousine.</p>
+</div>
+</div>
+<div class="box" >
+<div class="content">
+<h2>Designing excellence </h2>
+<p> Following the Quattroporte, Pininfarina designed a new coupé which will have a profound impact on the history of Maserati and the motoring world. Stunningly beautiful, the GranTurismo took the Geneva Motor Show by storm in 2007.</p>
+</div>
+</div>
+</div>
+<div class="content">
+<h1>The Trident</h1>
+<p>The Trident, the symbol of a myth. The badge used on all racing cars in Maserati’s history, has remained constant throughout the evolution of the brand and its style, technology and performance, accompanying all the victories and successes of Maserati cars.</p>
+</div>
+<div>
+<img src="https://images.caricos.com/m/maserati/2017_maserati_levante/images/1920x1080/2017_maserati_levante_7_1920x1080.jpg">
+</div>
